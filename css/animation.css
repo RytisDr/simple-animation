@@ -1,0 +1,123 @@
+/* STYLING//////////////////*/
+body{
+  background-color: aliceblue;
+}
+div:nth-child(1){
+  width: 80%;
+  height: 150px;
+  border: 5px dotted;
+  border-color:green;
+}
+div:nth-child(2){
+  width: 80%;
+}
+.branch{
+  width: 300px;
+}
+button {
+    font-family: "Comic Sans MS";
+    margin: 10px;
+    width: 120px;
+    height: 50px;
+    border: black solid 1px;
+    background-color: white;
+}
+.red{
+    background-color: red;
+}
+
+/* MOVE BUTTON///////////////*/
+.moveCSS {
+    animation: moveit 2s alternate infinite;
+}
+
+@keyframes moveit {
+  to {
+    transform: translateX(200px) translateY(100px);
+  }
+}
+
+/* MOVE TO 30% BUTTON///////////////*/
+.moveTo30CSS{
+    animation: moveTo30 2s forwards;
+}
+@keyframes moveTo30 {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(30%);
+    }
+}
+
+/* MOVE FROM 30% BUTTON///////////////*/
+.moveFrom30CSS{
+    animation: moveFrom30 2s forwards;
+}
+@keyframes moveFrom30 {
+    from{
+        transform: translateX(30%)
+    }
+    to{
+        transform: translateX(200%)
+    }
+}
+
+/*/////ONE JUMP BUTTON//////////*/
+.oneJumpCSS{
+    animation: oneJump 0.5s ease-out;
+}
+@keyframes oneJump {
+    50%{
+        transform: translateY(-50px);
+    }
+}
+
+/*/////JUMPING BUTTON//////////*/
+.jumpingCSS{
+    animation: oneJump 0.5s ease-out infinite;
+}
+
+/*/////FADE BUTTON//////////*/
+
+.fadeCSS{
+    animation: fade 1s infinite alternate;
+}
+@keyframes fade {
+    0% {opacity: 1;}
+   100% {opacity: 0;}
+}
+
+/*/////GLOW BUTTON//////////*/
+
+.glowCSS{
+    transition: all 0.1s;
+    filter: drop-shadow(0px 0px 8px rgba(0, 255, 0, 0.8));
+}
+
+/*////SHAKE BUTTON//////////*/
+
+.shakeCSS {
+    animation: shake 0.1s infinite;
+    }
+@keyframes shake {
+    25%{
+        transform: translateX(-15px);
+    }
+    75%{
+        transform: translateX(15px);
+    }
+}
+
+/*////MIRROR BUTTON//////////*/
+
+.mirrorCSS {
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+/*////MAGIC BUTTON//////////*/
+
+.magicCSS{
+    display: none;
+}
